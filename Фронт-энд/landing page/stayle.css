@@ -1,0 +1,138 @@
+/* @import "reset.css"; */
+body{
+  background: #e6e6e6;
+  margin: 0;
+  padding: 0;
+}
+/* Текст */
+h1,h2,h3,h4,h5,h6,span{
+  font-family: Roboto, Helvetica, sans-serif;
+}
+p,a,input{
+  font-size: 15px;
+  font-family: Roboto, Helvetica, sans-serif;
+}
+p.main-text{
+  background: #ffffff;
+  padding: 25px 50px;
+}
+header{
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+}
+section.header{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 15px;
+}
+/* Кнопки */
+button{
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.541);
+}
+.green{
+  background: #00a00d; 
+  cursor: pointer; 
+  border: rgba(0, 65, 29, 0.705); 
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+  margin: 5px;
+}
+.green:hover, .red:hover{
+  background: rgba(60, 60, 60, 0.24);
+  color: rgb(0, 0, 0);
+}
+.red{
+  background: #db5050; 
+  cursor: pointer;  
+  border: rgba(85, 24, 24, 0.705); 
+  color: rgb(255, 255, 255);
+  transition: 0.5s;
+}
+.inputFocus{
+  transition: 0.5s;
+}
+.inputFocus:hover{
+  background: #b9b9b9;
+  border-radius: 5px #b9b9b9;
+  box-shadow: 1px 1px 5px 0px #b9b9b9;
+}
+input{
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.541);
+}
+form{
+  width: 50%; 
+  height: 45%; 
+  background: #d3d3d3e5; 
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.541); 
+  position: fixed; 
+  left: 50%; 
+  top: 25%; 
+  margin-left: -25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+section>div.slider>img{
+  width: 80%;
+}
+section>.text{
+  margin: 0 auto;
+  width: 80%;
+}
+/* Товары */
+.goods{
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+section>.good{
+  background: #eeeeee;
+  width: 250px;
+  padding: 1%;
+  margin: 10px 0;
+  border: solid 2px rgba(173, 173, 173, 0.548);
+  transition: 0.3s;
+}
+section>.good:hover{
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.541);
+  width: 255px;
+}
+section>.good>a>img{
+  width: 100%;
+}
+.footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+/* Подвал */
+footer{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media(max-width: 800px){
+  .header{
+    flex-direction: column;
+  }
+  .header>a>img{
+    margin: 0 auto;
+  }
+  form{
+/* Написать стили */
+  }
+}

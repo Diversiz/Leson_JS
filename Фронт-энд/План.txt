@@ -1,0 +1,14 @@
+Верстка лендинга
+https://www.youtube.com/playlist?list=PL5Lhf4pQZ9WXD_5Jx03TGNcCpIO6Nf7bp
+https://study.up-skills.ru/
+HTML{}
+CSS{flex-box, grid}
+BOTSTRAP
+NodJS
+GULP
+SASS
+JS{ЗАНЯТИЯ ЧЕРЕЗ ДЕНЬ}
+JQWERY
+REACT{
+https://www.youtube.com/watch?v=ODaGricgyIE&list=PLvWwA9iDlhHBQ6razvwomGcUIfQm4fk6D
+}
