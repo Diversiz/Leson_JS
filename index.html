@@ -4,26 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="stayle.css">
 </head>
 <body>
-    <p>Текст</p>
-    <input type="text" id="text">
-    <button id="btn_1">GO</button><br>
-    <h1 id="out"></h1>
-    <hr style="width: 500px; float: left;"><br>
+    <div class="wrapper">
+        <!-- Первый блок -->
+        <div class="blok" style="width: 300px; border: 1px solid #000; padding: 15px;">
+            <p>Текст</p>
+            <input type="text" id="text">
+            <button id="btn_1">GO</button><br>
+            <h1 id="out"></h1>
+            <hr style="width: 200px; float: left;"><br>
+        
+            <p>Выбор цвета</p>
+            <div class="box" style="width: 100px; height: 100px; border: 2px solid #000; box-sizing: border-box;"></div><br>
+            <h1 id="out_2"></h1>
+            <input type="color" id="color">
+            <button id="btn_2">GO</button><br>
+            <hr style="width: 200px; float: left;"><br>
+        
+            <p>Календарь</p>
+            <input type="date" id="date">
+            <button id="btn_3">GO</button><br>
+            <h1 id="out_3"></h1>
+            <hr style="width: 200px; float: left;"><br>
+        
+            <p>Ранг</p><h1 id="out_4"></h1>
+            <input type="range" id="range" min="0" max="100" value="15">
+            <button id="btn_4">GO</button><br>
+            <hr style="width: 200px; float: left;"><br>  
+        </div>
 
-    <p>Выбор цвета</p>
-    <div class="box" style="width: 100px; height: 100px; border: 2px solid #000; box-sizing: border-box;"></div><br>
-    <h1 id="out_2"></h1>
-    <input type="color" id="color">
-    <button id="btn_2">GO</button><br>
-    <hr style="width: 500px; float: left;"><br>
+        <!-- Второй блок -->
+        <div class="blok" style="width: 300px; border: 1px solid #000; padding: 15px;">
+            <p>Радио кнопка</p><h1 id="out_5"></h1>
+            <input type="checkbox" id="checkbox"><label for="checkbox">Нажми на меня</label>
+            <button id="btn_5">GO</button><br>
+            <hr style="width: 200px; float: left;"><br>  
+        </div>
+    </div>
 
-    <p>Календарь</p>
-    <input type="date" id="date">
-    <button id="btn_3">GO</button><br>
-    <h1 id="out_3"></h1>
-    <hr style="width: 500px; float: left;"><br>
 
     <script src="script.js"></script>
 </body>
