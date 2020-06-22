@@ -53,3 +53,28 @@ btn_5.onclick = ()=>{
         out_5.innerHTML = 'Отжат';
     }
 }
+
+
+/* HTML
+//Разделите слово пополам и напишите его в два инпуиа и склейте его
+    <p>Форма</p><h1 id="out_6"></h1>
+    <form action="">
+    <input type="text" name="text"><br>
+    <input type="password" name="pass"><br>
+    <button id="btn_6">GO</button><br>
+    </form>
+
+*/
+
+ // Используем свойство name в form
+ const btn_6 = document.querySelector('#btn_6');
+ const out_6 = document.querySelector('#out_6');
+
+ btn_6.onclick = (event)=>{
+    event.preventDefault();
+    let form = document.querySelector('form');
+
+    out_6.innerHTML = form.text.value + form.pass.value;
+    //  console.log(form.text.value);
+    //  console.log(form.pass.value);
+ }
