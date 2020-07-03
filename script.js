@@ -78,3 +78,17 @@ btn_5.onclick = ()=>{
     //  console.log(form.text.value);
     //  console.log(form.pass.value);
  }
+
+ // Цикл для вывода массива данных
+ const btn_7 = document.querySelector('#btn_7');
+ const out_7 = document.querySelector('#out_7');
+
+btn_7.onclick = ()=>{ 
+let name = document.querySelectorAll('input[type="radio"]');
+
+    for(let i = 0; i < name.length; i++){
+        if(name[i].checked){
+            out_7.innerHTML = name[i].value;
+        }
+    }
+}
