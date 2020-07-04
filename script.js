@@ -92,3 +92,30 @@ let name = document.querySelectorAll('input[type="radio"]');
         }
     }
 }
+
+ // Вывод циклом значения из div при клике цвет
+const btn_8 = document.querySelector('#btn_8');
+
+// console.log(out_8[0].style.background = "Red");
+// console.log(out_8[1].style.background = "Blue");
+// out_8[2].style.background = "Green";
+
+
+
+btn_8.onclick = ()=>{ 
+    let valueItem = document.querySelectorAll('.item input[type="radio"]');
+    let out_8 = document.querySelectorAll('.item');
+    
+        for(let i = 0; i < valueItem.length; i++){
+            if(valueItem[i].checked){
+                let outs = valueItem[i].value;
+                out_8[i].style.background = outs;
+                //Проверка на соответствие value 
+                //При выборе другого цвета уничтожить предыдцщий
+                // if(valueItem[i].value == outs){
+                //     console.log(valueItem[i].value);
+                // }
+            }
+        }
+    }
+
