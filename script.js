@@ -96,12 +96,6 @@ let name = document.querySelectorAll('input[type="radio"]');
  // Вывод циклом значения из div при клике цвет
 const btn_8 = document.querySelector('#btn_8');
 
-// console.log(out_8[0].style.background = "Red");
-// console.log(out_8[1].style.background = "Blue");
-// out_8[2].style.background = "Green";
-
-
-
 btn_8.onclick = ()=>{ 
     let valueItem = document.querySelectorAll('.item input[type="radio"]');
     let out_8 = document.querySelectorAll('.item');
@@ -110,12 +104,42 @@ btn_8.onclick = ()=>{
             if(valueItem[i].checked){
                 let outs = valueItem[i].value;
                 out_8[i].style.background = outs;
-                //Проверка на соответствие value 
-                //При выборе другого цвета уничтожить предыдцщий
-                // if(valueItem[i].value == outs){
-                //     console.log(valueItem[i].value);
-                // }
             }
         }
     }
 
+ // Вывод циклом значения из div при клике цвет
+ let out_9 = document.querySelector('#out_9');
+
+for(let i = 0; i < 3; i++){
+    for(let j = 0; j < 5; j++){
+    out_9.innerHTML += "*_" ;
+    }
+    out_9.innerHTML += "<br>" ;
+}
+// Сделать елочку
+/*
+---*---
+--***--
+-*****-
+1 3 5  ++ 2
+1 + 0 = 1
+1 + 2 = 3
+1 + 4 = 5
+
+6 4 2  -- 2
+7 - 1 = 6
+7 - 3 = 4
+7 - 5 = 2
+Первый цыкл делает отступ 3 раза
+Второй цыкл рисует черточки ( - ) 
+Третий цыкл рисует звездочки ( * )
+*/
+let out_10 = document.querySelector('#out_10');
+
+for(let i = 0; i < 3; i++){
+    for(let g = i; g < 3; g++){
+        for(let s = g; s < 3; s++){
+        out_10.innerHTML += "-";}
+    out_10.innerHTML += "*";}
+out_10.innerHTML += "<br>";}
