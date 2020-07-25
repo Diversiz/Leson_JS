@@ -1,86 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="stayle.css">
-</head>
-<body>
+    <link rel="stylesheet" href="stayle.css" />
+  </head>
+  <body>
     <div class="wrapper">
-        <!-- Первый блок -->
-        <div class="blok" style="width: 300px; border: 1px solid #000; padding: 15px;">
-            <p>Текст</p>
-            <input type="text" id="text">
-            <button id="btn_1">GO</button><br>
-            <h1 id="out"></h1>
-            <hr style="width: 200px; float: left;"><br>
-        
-            <p>Выбор цвета</p>
-            <div class="box" style="width: 100px; height: 100px; border: 2px solid #000; box-sizing: border-box;"></div><br>
-            <h1 id="out_2"></h1>
-            <input type="color" id="color">
-            <button id="btn_2">GO</button><br>
-            <hr style="width: 200px; float: left;"><br>
-        
-            <p>Календарь</p>
-            <input type="date" id="date">
-            <button id="btn_3">GO</button><br>
-            <h1 id="out_3"></h1>
-            <hr style="width: 200px; float: left;"><br>
-        
-            <p>Ранг</p><h1 id="out_4"></h1>
-            <input type="range" id="range" min="0" max="100" value="15">
-            <button id="btn_4">GO</button><br>
-            <hr style="width: 200px; float: left;"><br>  
+      <!-- Первый блок -->
+      <div
+        class="blok"
+        style="width: 300px; border: 1px solid #000; padding: 15px;"
+      >
+        <p>Текст</p>
+        <input type="text" id="text" />
+        <button id="btn_1">GO</button><br />
+        <h1 id="out"></h1>
+        <hr style="width: 200px; float: left;" />
+        <br />
+
+        <p>Выбор цвета</p>
+        <div
+          class="box"
+          style="
+            width: 100px;
+            height: 100px;
+            border: 2px solid #000;
+            box-sizing: border-box;
+          "
+        ></div>
+        <br />
+        <h1 id="out_2"></h1>
+        <input type="color" id="color" />
+        <button id="btn_2">GO</button><br />
+        <hr style="width: 200px; float: left;" />
+        <br />
+
+        <p>Календарь</p>
+        <input type="date" id="date" />
+        <button id="btn_3">GO</button><br />
+        <h1 id="out_3"></h1>
+        <hr style="width: 200px; float: left;" />
+        <br />
+
+        <p>Ранг</p>
+        <h1 id="out_4"></h1>
+        <input type="range" id="range" min="0" max="100" value="15" />
+        <button id="btn_4">GO</button><br />
+        <hr style="width: 200px; float: left;" />
+        <br />
+      </div>
+
+      <!-- Второй блок -->
+      <div
+        class="blok"
+        style="width: 300px; border: 1px solid #000; padding: 15px;"
+      >
+        <p>Радио кнопка</p>
+        <h1 id="out_5"></h1>
+        <input type="checkbox" id="checkbox" /><label for="checkbox"
+          >Нажми на меня</label
+        >
+        <button id="btn_5">GO</button><br />
+        <hr style="width: 200px; float: left;" />
+        <br />
+
+        <p>Форма</p>
+        <h1 id="out_6"></h1>
+        <form action="">
+          <input type="text" name="text" /><br />
+          <input type="password" name="pass" /><br /><br />
+          <button id="btn_6">GO</button><br />
+        </form>
+        <hr style="width: 200px; float: left;" />
+        <br />
+
+        <p>Вывод циклом значения из value</p>
+        <h1 id="out_7"></h1>
+        <div><input type="radio" name="*" value="Dmitry" checked />Dmitry</div>
+        <div><input type="radio" name="*" value="Sergi" />Sergei</div>
+        <div><input type="radio" name="*" value="Alexander" />Alexander</div>
+        <br />
+        <button id="btn_7">GO</button><br />
+        <hr style="width: 200px; float: left;" />
+        <br />
+
+        <p>Вывод циклом значения из div при клике цвет</p>
+        <h1 id="out_8"></h1>
+        <div class="item">
+          <input type="radio" name="*" value="Red" checked />Red
         </div>
-
-        <!-- Второй блок -->
-        <div class="blok" style="width: 300px; border: 1px solid #000; padding: 15px;">
-            <p>Радио кнопка</p><h1 id="out_5"></h1>
-            <input type="checkbox" id="checkbox"><label for="checkbox">Нажми на меня</label>
-            <button id="btn_5">GO</button><br>
-            <hr style="width: 200px; float: left;"><br>
-
-            <p>Форма</p><h1 id="out_6"></h1>
-            <form action="">
-            <input type="text" name="text"><br>
-            <input type="password" name="pass"><br><br>
-            <button id="btn_6">GO</button><br>
-            </form>
-            <hr style="width: 200px; float: left;"><br>
-
-            <p>Вывод циклом значения из value</p><h1 id="out_7"></h1>
-            <div><input type="radio" name="*" value="Dmitry" checked>Dmitry</div>
-            <div><input type="radio" name="*" value="Sergi">Sergei</div>
-            <div><input type="radio" name="*" value="Alexander">Alexander</div><br>
-            <button id="btn_7">GO</button><br>
-            <hr style="width: 200px; float: left;"><br>
-
-            <p>Вывод циклом значения из div при клике цвет</p><h1 id="out_8"></h1>
-            <div class="item"><input type="radio" name="*" value="Red" checked>Red</div>             
-            <div class="item"><input type="radio" name="*" value="Blue">Blue</div>             
-            <div class="item"><input type="radio" name="*" value="Green">Green</div><br>             
-            <button id="btn_8">GO</button><br>
-            <hr style="width: 200px; float: left;"><br>
+        <div class="item"><input type="radio" name="*" value="Blue" />Blue</div>
+        <div class="item">
+          <input type="radio" name="*" value="Green" />Green
         </div>
-        
-        <!-- Третий блок -->
-        <div class="blok" style="width: 300px; border: 1px solid #000; padding: 15px;">
-            <p>Вывод звездочек спомощю циклов ( ***** )</p>
-            <div id="out_9" ></div>
-            <hr style="width: 200px; float: left;"><br>
+        <br />
+        <button id="btn_8">GO</button><br />
+        <hr style="width: 200px; float: left;" />
+        <br />
+      </div>
 
-            <p>Ёлка</p>
-            <div id="out_10" ></div>
-            <hr style="width: 200px; float: left;"><br>
-        </div>
+      <!-- Третий блок -->
+      <div
+        class="blok"
+        style="width: 300px; border: 1px solid #000; padding: 15px;"
+      >
+        <p>Вывод звездочек спомощю циклов ( ***** )</p>
+        <div id="out_9"></div>
+        <hr style="width: 200px; float: left;" />
+        <br />
+
+        <p>Ёлка</p>
+        <div id="out_10"></div>
+        <hr style="width: 200px; float: left;" />
+        <br />
+      </div>
     </div>
-    
+
     <script src="script.js"></script>
     <!-- 
     style="margin: 0 auto;" 
     border: 3px solid green; padding: 15px;
+    Коментарий
     -->
-</body>
+  </body>
 </html>
