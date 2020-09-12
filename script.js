@@ -153,3 +153,23 @@ for (let i = 0; i < 4; i++) {
   flag--;
   out_10.innerHTML += "<br>";
 }
+
+/* <p>TEST</p>
+<div id="out_11"></div>
+<button id="btn_9">GO</button><br />
+<hr style="width: 200px; float: left" />
+<br /> */
+
+const btn_9 = document.querySelector("#btn_9");
+let out_11 = document.querySelector("#out_11");
+
+btn_9.onclick = () => {
+  let elem = document.createElement("div");
+
+  elem.className = "three";
+  elem.classList.remove("three");
+  elem.classList.add("one", "two");
+  elem.innerHTML = "Hello";
+  console.log(elem);
+  out_11.innerHTML = elem;
+};
