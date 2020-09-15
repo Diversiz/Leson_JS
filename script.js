@@ -167,9 +167,9 @@ btn_9.onclick = () => {
   let elem = document.createElement("div");
 
   elem.className = "three";
-  elem.classList.remove("three");
-  elem.classList.add("one", "two");
+  // elem.classList.remove("three");
+  // elem.classList.add("one", "two");
   elem.innerHTML = "Hello";
   console.log(elem);
-  out_11.innerHTML = elem;
+  out_11.appendChild(elem);
 };
